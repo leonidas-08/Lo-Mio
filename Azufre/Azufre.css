@@ -380,16 +380,8 @@ header{
     background: white;
     margin: 0 auto 2em auto;
     padding: 35px 30px; 
+    box-shadow: 2px 2px 2px 2px #aba7a7;
 }
-
-.blog-subtitle{
-    font-size: 1.15em;
-    margin-top: 5px;
-    position: relative;
-    color: #2d2d2d;
-    opacity: 90%;
-}
-
 
 .side-post{
     background: white;
@@ -426,16 +418,9 @@ header{
     text-align: center;
 }
 
-.side-list{
-  text-align: center;
-  list-style-type: none;
-  font-size: 15px;
-}
-
 .boton-link{
-    padding:14px 50px;
-    margin-bottom: 10px;
-    margin-left: 7px;
+    padding:14px 25px;
+    margin-bottom: 15px;
     text-decoration: none;
     border: none;
     border-radius: 6%;
@@ -458,13 +443,12 @@ header{
     margin-top: 5px;
 }
 
-.date{
-    font-size: 1em;
-    font-weight: 400;
-    color: #9c9c9c;
-    margin-top: -10px;
-    text-decoration: underline;
-    text-decoration-color: currentColor;
+.blog-subtitle{
+    font-size: 1.15em;
+    padding-left: 5px;
+    margin-top: 5px;
+    color: #514f4f;
+    opacity: 70%;
 }
 
 .Tema-1{
@@ -475,6 +459,77 @@ header{
     margin-top: 10px;
     font-size: 1em;
     padding-left: 15px;
+}
+
+.blog-list{
+    list-style-type: none;
+    padding-left: 35px;
+}
+
+.side-list{
+    font-size: 1.0em;
+    list-style-type: none;
+    list-style: none;
+    text-align: center;
+    padding-top: 6.5px;
+}
+
+.side-list a{
+    color: #000;
+    text-decoration: none;
+}
+
+.side-list a:hover{
+    color: #c180f7;
+    cursor: pointer;
+}
+
+/*diseño responsive*/
+
+@media screen and (max-width: 56.25em) {
+    .col{
+        margin: 1% 0 1% 0%;
+    }
+
+    .span_2_of_3,
+    .span_1_of_3{
+        width: 100%;
+    } 
+
+    .side-post{
+        width: 42%;
+        float: left;
+        margin: -2% 0 1% 1.6%;
+    }
+}
+
+@media screen and (max-width: 42.813) {
+    .side-post{
+        width: auto;
+        padding: 15px;
+        margin: -2% auto 8% auto;
+        float: right;
+    }
+
+    .blog-title{
+        font-size: 1.95em;
+    }
+
+    .blog-subtitle{
+        font-size: .9em;
+    }
+
+}
+
+@media screen and (max-width: 23.75em) {
+    .blog-content,
+    .boton-link{
+        font-size: 5px;
+    }
+
+    .side-content{
+        font-size: .8em;
+    }
 }
 
 /*Nitrogeno*/
